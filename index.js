@@ -24,6 +24,7 @@ app.get('/movie/:movieId', async (req, res) => {
   console.log("/movie/movieId ", req.params.movieId);
   console.log("I parametri sono: ", req.params);
   const movieId = req.params.movieId;
+  ///magic to test if the file exists
   // controllo se esiste il file `data/movie-${movieId}.json`
   // SE NON ESISTE (devo usare fs.statSync...) --> lo scarico con fetch ()
   // SE ESISTE --> non faccio nulla
